@@ -228,22 +228,22 @@ class InstallerController extends Controller
         $newGenral->title = preg_replace('/\s+/', '', $request->APP_NAME);
         $newGenral->save();
 
-         $apistatus = $this->update_status('1');
+        //  $apistatus = $this->update_status('1');
 
-        if ($apistatus == 1) {
+        // if ($apistatus == 1) {
 
-            $this->changeEnv(['IS_INSTALLED' => '1']);
-            \Artisan::call('cache:clear');
-            \Artisan::call('view:clear');
+        //     $this->changeEnv(['IS_INSTALLED' => '1']);
+        //     \Artisan::call('cache:clear');
+        //     \Artisan::call('view:clear');
 
-        } else {
+        // } else {
 
-            \Artisan::call('cache:clear');
-            \Artisan::call('view:clear');
-            notify()->error('Oops Please try again !');
-            return redirect()->route('installApp')->withInput();
+        //     \Artisan::call('cache:clear');
+        //     \Artisan::call('view:clear');
+        //     notify()->error('Oops Please try again !');
+        //     return redirect()->route('installApp')->withInput();
 
-        }
+        // }
 
         Session::flush();
 
