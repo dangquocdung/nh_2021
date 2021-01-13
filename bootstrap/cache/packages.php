@@ -1,4 +1,11 @@
 <?php return array (
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
   'anhskohbo/no-captcha' => 
   array (
     'providers' => 
@@ -75,28 +82,6 @@
       'HTMLMin' => 'HTMLMin\\HTMLMin\\Facades\\HTMLMin',
     ),
   ),
-  'intervention/image' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Intervention\\Image\\ImageServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Image' => 'Intervention\\Image\\Facades\\Image',
-    ),
-  ),
-  'jenssegers/agent' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Jenssegers\\Agent\\AgentServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Agent' => 'Jenssegers\\Agent\\Facades\\Agent',
-    ),
-  ),
   'jorenvanhocht/laravel-share' => 
   array (
     'providers' => 
@@ -120,17 +105,6 @@
     'providers' => 
     array (
       0 => 'Laravel\\Passport\\PassportServiceProvider',
-    ),
-  ),
-  'laravel/socialite' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
     ),
   ),
   'laravel/tinker' => 
@@ -159,6 +133,17 @@
       'Html' => 'Collective\\Html\\HtmlFacade',
     ),
   ),
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
   'laravolt/avatar' => 
   array (
     'providers' => 
@@ -181,25 +166,22 @@
       'Notify' => 'Mckenziearts\\Notify\\Facades\\LaravelNotify',
     ),
   ),
-  'nesbot/carbon' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Carbon\\Laravel\\ServiceProvider',
-    ),
-  ),
-  'nunomaduro/collision' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    ),
-  ),
   'orangehill/iseed' => 
   array (
     'providers' => 
     array (
       0 => 'Orangehill\\Iseed\\IseedServiceProvider',
+    ),
+  ),
+  'jenssegers/agent' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Jenssegers\\Agent\\AgentServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Agent' => 'Jenssegers\\Agent\\Facades\\Agent',
     ),
   ),
   'pragmarx/tracker' => 
@@ -211,6 +193,17 @@
     'aliases' => 
     array (
       'Tracker' => 'PragmaRX\\Tracker\\Vendor\\Laravel\\Facade',
+    ),
+  ),
+  'laravel/socialite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
     ),
   ),
   'revolution/socialite-amazon' => 
@@ -257,13 +250,6 @@
     'providers' => 
     array (
       0 => 'Spatie\\Translatable\\TranslatableServiceProvider',
-    ),
-  ),
-  'tanmuhittin/laravel-google-translate' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Tanmuhittin\\LaravelGoogleTranslate\\LaravelGoogleTranslateServiceProvider',
     ),
   ),
   'tzsk/payu' => 
@@ -319,6 +305,20 @@
     'aliases' => 
     array (
       'Notify' => 'Yoeunes\\Notify\\Facades\\Notify',
+    ),
+  ),
+  'nunomaduro/collision' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'tanmuhittin/laravel-google-translate' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Tanmuhittin\\LaravelGoogleTranslate\\LaravelGoogleTranslateServiceProvider',
     ),
   ),
 );
