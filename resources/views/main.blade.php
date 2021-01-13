@@ -1,1 +1,1 @@
-{{ $w_title }}
+{{ $copyright }}
