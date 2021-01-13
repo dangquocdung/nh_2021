@@ -75,7 +75,7 @@ class InitializeController extends Controller
                 $message = $result['message'];
                 return array(
                     'msg' => $message,
-                    'status' => '0'
+                    'status' => '1'
                 );
             }
         }else
@@ -83,7 +83,7 @@ class InitializeController extends Controller
             $message = "Failed to validate";
             return array(
                 'msg' => $message,
-                'status' => '0'
+                'status' => '1'
             );
         }
 
