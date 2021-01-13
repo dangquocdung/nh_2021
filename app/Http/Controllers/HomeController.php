@@ -330,7 +330,7 @@ class HomeController extends Controller
         $withlogin = Config::findOrFail(1)->withlogin;
         $menufirst = Menu::first();
 
-        return response()->json($removelanding, 200);
+        // return response()->json($removelanding, 200);
 
         if ($removelanding == 1 && $catlog == 1) {
             if (isset($menufirst->slug)) {

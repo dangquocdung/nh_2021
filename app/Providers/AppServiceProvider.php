@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 
-
-
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -82,16 +80,12 @@ class AppServiceProvider extends ServiceProvider
             $color_dark = $config->color_dark;
             $remove_subscription =$button->remove_subscription;
              
-
-
             $seo = seo::find(1);
             $fb = $seo->fb;
             $google = $seo->google;
             $description = $seo->description;
             $keyword = $seo->keyword;
             $author = $seo->author;
-
-           
 
             $omdbApiKey = env('OMDB_API_KEY');
             $tmdbApiKey = env('TMDB_API_KEY');
@@ -110,7 +104,6 @@ class AppServiceProvider extends ServiceProvider
         }
       }
 
-        
     }
 
     /**
