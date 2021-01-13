@@ -329,6 +329,9 @@ class HomeController extends Controller
         $removelanding = Config::findOrFail(1)->remove_landing_page;
         $withlogin = Config::findOrFail(1)->withlogin;
         $menufirst = Menu::first();
+
+        return response()->json($removelanding, 200);
+
         if ($removelanding == 1 && $catlog == 1) {
             if (isset($menufirst->slug)) {
                 if (Auth::check()) {
