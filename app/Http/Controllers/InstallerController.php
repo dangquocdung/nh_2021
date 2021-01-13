@@ -458,7 +458,7 @@ class InstallerController extends Controller
         if ($response->serverError())
         {
             $message = "Error connecting to API.";
-            return 2;
+            return 1;
         }
         
         // $responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
