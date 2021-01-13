@@ -57,6 +57,8 @@ class InitializeController extends Controller
         ]);
 
         $result = $response->json();
+
+        return response()->json($result);
         
         if($response->successful()){
             if ($result['status'] == '1')
