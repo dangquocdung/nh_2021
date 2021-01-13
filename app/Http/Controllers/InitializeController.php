@@ -13,15 +13,7 @@ class InitializeController extends Controller
     public function verify(Request $request)
     {
         
-        $d = \Request::getHost();
-        $domain = str_replace("www.", "", $d);  
-
-        $alldata = ['app_id' => "24626244", 'ip' => $request->ip(), 'domain' => $domain , 'code' => $request->code];
         
-        $data = $this->make_request($alldata);
-
-        if ($data['status'] == 1)
-        {
             $put = 1;
             file_put_contents(public_path().'/config.txt', $put);
 
@@ -35,16 +27,7 @@ class InitializeController extends Controller
 
            
             return redirect()->route('db.setup');
-        }
-        elseif ($data['msg'] == 'Already Register')
-        {   
-            return redirect()->route('verifylicense')->withErrors(['User is already registered']);
-        }
-        else
-        {
-            notify()->error($data['msg']);
-            return back()->withErrors([$data['msg']]);
-        }
+        
     }
 
     public function make_request($alldata)
