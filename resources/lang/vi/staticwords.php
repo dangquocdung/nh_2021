@@ -43,7 +43,7 @@
 		'termsandcondition'=> 'Điều khoản và điều kiện',
 		'privacypolicy' => 'Chính sách bảo mật',
 		'refundpolicy' => 'Chính sách hoàn lại tiền',
-		'help' => 'Cứu giúp',
+		'help' => 'Hỗ trợ',
 		'corporate' => 'Công ty',
 		'sitemap' => 'Sơ đồ trang web',
 		'subscribe' => 'Đăng ký',
